@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laci</title>
-    <style>
-        .img {
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="img"><img src="laci.GIF" alt="Laci" title="Laci"></div>
+    
+    <!-- navbar-expand-lg: itt dől el, hol vált át mobil nézetre -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Bal oldal: Logo és Név -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/lacilogo.png" alt="Logo" width="70" height="70" class="d-inline-block">
+                <span style="margin-left: 10px;">Laci</span>
+            </a>
+
+            <!-- Mobil hamburger gomb - csak kis kijelzőn látszik -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menü tartalma -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Laci Menü</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- ms-auto: ez tolja jobbra a gombokat asztali nézetben -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Kezdőlap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galéria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Egyéb Lacik
+                            </a>
+                            <!-- lg-n: középre igazít, alapból (mobilon): balra/normál -->
+                            <ul class="dropdown-menu dropdown-menu-lg-center custom-dropdown">
+                                <li><a class="dropdown-item" href="#">Laci Gyros</a></li>
+                                <li><a class="dropdown-item" href="#">Laci Autóműhely</a></li>
+                                <li><a class="dropdown-item" href="#">Laci Disco</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img class="laci elmosodo-kep" src="images/IMG_8540.jpeg">
+    <h1>Laci</h1>
+    <div class="subtitle">A legLacibb Laci.</div>
+    <div class="container">
+    <!-- Az 'align-items-center' osztály függőlegesen középre igazítja az összes oszlopot a soron belül -->
+    <div class="row align-items-center justify-content-between">
+        <h2>Mit csinálsz, cigány?</h2>
+        <video class="col-12 col-md-5" src="images/maci.mp4" controls></video>
+        
+        <p class="col-12 col-md-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias perspiciatis aliquid quod deserunt consequatur eaque voluptatum error in suscipit sint, minima accusantium facilis blanditiis nobis, veritatis ipsum cupiditate maiores corporis illum, doloribus quam! Ducimus nemo, perferendis modi magnam itaque quia similique beatae debitis veniam voluptate aut accusamus nulla ullam enim.
+        </p>
+    </div>
+    <div class="row align-items-center justify-content-between">
+        <h2>Laci ülj le!</h2>
+        <video class="col-12 col-md-5" src="images/laciuljle.mp4" controls></video>
+        <p class="col-12 col-md-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias perspiciatis aliquid quod deserunt consequatur eaque voluptatum error in suscipit sint, minima accusantium facilis blanditiis nobis, veritatis ipsum cupiditate maiores corporis illum, doloribus quam! Ducimus nemo, perferendis modi magnam itaque quia similique beatae debitis veniam voluptate aut accusamus nulla ullam enim.
+        </p>
+        
+    </div>
+</div>
+szia lali
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

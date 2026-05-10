@@ -1,0 +1,155 @@
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Imperial Script", cursive;
+}
+.navbar {
+    background-color: rgb(146, 205, 58);
+}
+.nav-link {
+    padding: 12px;
+    font-family: "Imperial Script", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    transition:all 0.3s ease;
+}
+.nav-link:hover {
+    transform: scale(1.1);
+    text-shadow: 5px 5px 5px black;
+}
+.active {
+    font-weight: 1000px;
+}
+.gap{
+    margin: 5px;
+}
+.dropdown-menu {
+    background-color: rgb(146, 205, 58);
+    font-family: "Imperial Script", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    /* Keret marad, ahogy eredetileg volt */
+}
+.dropdown-menu-lg-center {
+    left: 50% !important;
+    transform: translateX(-55%) !important; /* Visszaraktam az eredeti eltolást */
+    right: auto !important;
+}
+
+/* --- ANIMÁCIÓK (Csak fade-in, semmi mozgás) --- */
+@keyframes fadeInOnly {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.elmosodo-kep, h1, .subtitle {
+    animation: fadeInOnly 1s ease-out forwards;
+}
+
+.subtitle { animation-delay: 0.5s; opacity: 0; }
+
+/* Desktop Dropdown animáció (áttűnés) */
+@media (min-width: 992px) {
+    .dropdown-menu {
+        display: block !important;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Offcanvas gombok animációja (csak fade-in) */
+@media (max-width: 991px) {
+    .offcanvas-body .nav-item {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .offcanvas.show .nav-item {
+        opacity: 1;
+    }
+
+    .offcanvas.show .nav-item:nth-child(1) { transition-delay: 0.1s; }
+    .offcanvas.show .nav-item:nth-child(2) { transition-delay: 0.2s; }
+    .offcanvas.show .nav-item:nth-child(3) { transition-delay: 0.3s; }
+    .offcanvas.show .nav-item:nth-child(4) { transition-delay: 0.4s; }
+
+    /* Mobilon maradjon balra a szöveg, ahogy alapból van */
+    .custom-dropdown {
+        position: static !important;
+        transform: none !important;
+    }
+}
+
+/* --- VISSZAÁLLÍTOTT EREDETI BEÁLLÍTÁSOK --- */
+.laci {
+    width: 100%;
+    height: 600px; /* Marad a fix magasság, így nyúlni fog, ha kell */
+}
+.dropdown-item:hover {
+    background-color: rgb(198, 232, 148);
+}
+.dropdown-item:active {
+    background-color: rgb(247, 255, 236);
+    color: black;
+}
+.elmosodo-kep {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+h1 {
+    font-family: "Imperial Script", cursive;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -450px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+.subtitle {
+    font-family: "Imperial Script", cursive;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -475px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+.offcanvas-body {
+    background-color: rgb(146, 205, 58);
+}
+.offcanvas-header {
+    background-color: rgb(129, 184, 47);
+    font-family: "Imperial Script", cursive;
+}
+video {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    background-color: black;
+    border-radius: 14px;
+
+}
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+h2 {
+    font-family: "Imperial Script", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
