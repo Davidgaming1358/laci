@@ -10,17 +10,18 @@
 }
 .navbar {
     background-color: rgb(146, 205, 58);
+    border-bottom: 2px solid rgb(85, 85, 85);
 }
 .nav-link {
     padding: 12px;
     font-family: "Imperial Script", cursive;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     transition:all 0.3s ease;
 }
 .nav-link:hover {
     transform: scale(1.1);
-    text-shadow: 5px 5px 5px rgb(182, 182, 182);
+    text-shadow: 5px 5px 5px rgb(119, 118, 118);
 }
 .active {
     font-weight: 1000px;
@@ -31,7 +32,7 @@
 .dropdown-menu {
     background-color: rgb(146, 205, 58);
     font-family: "Imperial Script", cursive;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     /* Keret marad, ahogy eredetileg volt */
 }
@@ -119,12 +120,12 @@ h1 {
 }
 .subtitle {
     font-family: "Imperial Script", cursive;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     position: relative;
     top: -475px;
     color: white;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 5px 5px 2px black;
 }
 .offcanvas-body {
     background-color: rgb(146, 205, 58);
@@ -132,6 +133,9 @@ h1 {
 .offcanvas-header {
     background-color: rgb(129, 184, 47);
     font-family: "Imperial Script", cursive;
+}
+.offcanvas-title {
+    font-size: 40px;
 }
 video {
     width: 100%;
@@ -144,12 +148,28 @@ video {
 p {
     text-align: justify;
     font-size: 20px;
+    padding: 20px;
 }
 h2 {
     font-family: "Imperial Script", cursive;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 150px;
     padding-bottom: 20px;
+}
+.laciimg img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+.footertext {
+    font-size: 20px;
+}
+footer {
+    margin-top: 40px;
+    border-top: 2px solid rgb(85, 85, 85);
+}
+.nomargintop {
+    padding-top: 0px;
 }
