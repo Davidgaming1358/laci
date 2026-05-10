@@ -20,7 +20,7 @@
 }
 .nav-link:hover {
     transform: scale(1.1);
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px rgb(182, 182, 182);
 }
 .active {
     font-weight: 1000px;
